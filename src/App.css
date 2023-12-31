@@ -1,0 +1,91 @@
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  padding: 7vh;
+  text-transform: uppercase;
+  letter-spacing: .5vh;
+  font-size: 7vh;
+}
+
+.adder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.adder textarea {
+  outline: none;
+  border: 3px solid white;
+  background: white;
+  opacity: .7;
+  color: black;
+  height: 7vh;
+  width: 100%;
+  font-weight: 800;
+  font-size: 3vh;
+  resize: vertical;
+  padding: 2vh 6vh 1vh 2vh;
+}
+
+.adder span {
+  position: absolute;
+  right: -1vh;
+  top: 1vh;
+  font-size: 5.5vh;
+  font-weight: 800;
+  line-height: 1.21;
+  cursor: pointer;
+  transition: all 200ms;
+  color: whitesmoke;
+}
+
+.adder span:hover {
+  transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 5vh; /* smaller font size */
+    padding: 5vh;
+  }
+
+  .adder {
+    width: 90%; /* more width for smaller screens */
+  }
+
+  .adder textarea {
+    font-size: 2.5vh; /* smaller font size */
+  }
+
+  .adder span {
+    font-size: 4vh; /* smaller plus icon */
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 6vh;
+  }
+
+  .adder {
+    width: 85%;
+  }
+
+  .adder textarea {
+    font-size: 2.8vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .adder {
+    max-width: 600px; /* cap the maximum width */
+  }
+}

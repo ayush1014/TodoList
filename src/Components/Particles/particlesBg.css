@@ -1,0 +1,43 @@
+/* .reset-btn{
+    margin-left: 45%;
+    width: 10vw;
+    height: 5vh;
+    background-color: black;
+    opacity: 20%;
+    color:white;
+    border: none;
+} */
+.reset-btn {
+    width: 60%; /* More suitable for mobile */
+    height: 5vh;
+    background-color: black;
+    opacity: 20%;
+    color: white;
+    border: none;
+    margin: 0 auto; /* Center the button */
+    display: block; /* Make it a block-level element */
+    font-size: 2vh; /* Adjust font size for readability */
+    padding: 1vh 0; /* Add some padding */
+    text-align: center; /* Ensure text is centered */
+  }
+
+  @media only screen and (max-width: 600px) {
+    .reset-btn {
+      width: 40%; /* Take more width for easier clickability */
+      padding: 1vh 0; /* Larger padding for a taller button */
+    }
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .reset-btn {
+      width: 40%; /* Smaller than mobile but larger than desktop */
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .reset-btn {
+      width: 10vw; /* Original width as specified */
+      margin-left: 45%; /* Keep it centered */
+    }
+  }
+  

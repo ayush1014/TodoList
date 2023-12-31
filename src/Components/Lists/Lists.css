@@ -1,0 +1,108 @@
+/* .list{
+    padding: 1vh;
+    margin-top: 10vh;
+}
+
+.list li{
+    background-color: #fff;
+    opacity: .8;
+    width: 80%;
+    color: black;
+    font-weight: 800;
+    font-size:4vh;
+    padding: 2vh;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: vertical;
+    margin: 0 auto 5vh;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.actions{
+    cursor: pointer;
+    display: flex;
+    flex-direction:initial;
+    width: 10vh;
+    padding: 3vh 0vh 0vh 0vh;
+    right: 20px;
+}
+
+.list li.done{
+    background-color: red;
+} */
+
+.list {
+    padding: 1vh;
+    margin-top: 10vh;
+  }
+  
+  .list li{
+    background-color: #fff;
+    opacity: .8;
+    width: 80%;
+    color: black;
+    font-weight: 800;
+    font-size:4vh;
+    padding: 2vh;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: vertical;
+    margin: 0 auto 5vh;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+  
+  .actions {
+    cursor: pointer;
+    display: flex;
+    width: 10vh;
+    padding: 0vh 3vh 0vh 0vh;
+    right: 20px;
+  }
+  
+  .list li.done {
+    background-color: red;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .list li {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 3vh; /* smaller font size */
+      padding: 3vh; /* more padding for readability */
+    }
+  
+    .actions {
+      width: 100%; /* full width */
+      margin-top: 2vh; /* add margin on top */
+      justify-content: space-around; /* spread icons evenly */
+    }
+  }
+
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .list li {
+      font-size: 3.5vh; /* slightly smaller font size */
+      padding: 2.5vh; /* adjust padding */
+    }
+  
+    .actions {
+      width: 12vh; /* adjust width */
+      padding-top: 2vh; /* adjust padding */
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .list li {
+      max-width: 700px; /* cap the maximum width of list items */
+    }
+  }
+  
